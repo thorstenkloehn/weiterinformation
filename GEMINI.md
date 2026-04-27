@@ -2,7 +2,7 @@ Suche im Web nach Nachrichten zur modernen Softwareentwicklung, die für die Sof
 
 Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. Wenn das Thema nicht explizit im Titel oder Artikel genannt wird, aber einen klaren Bezug hat, nimm es bitte auf. Nimm keine Themen auf, die keinen klaren Bezug zu diesen Themen haben. Nur Nachrichten von heute (nicht älter als 24 Stunden).
 
-- KI heute, bezüglich:
+- KI 
   - Entwicklungsumgebungen (IDE)
     - Terminal-Agenten (Coding & System)
     - KI-native Entwicklungsumgebungen (IDE)
@@ -14,7 +14,7 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
   - Agent Client Protocol (ACP)
   - Model Context Protocol (MCP)
   - Retrieval-Augmented Generation (RAG)
-- Programmiersprachen: Nur ASP.NET Core MVC und Spring Boot – nur Nachrichten von heute
+- Programmiersprachen: Nur ASP.NET Core MVC und Spring Boot 
 
 Gib Quellenangaben an.
 
