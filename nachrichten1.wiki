@@ -1,25 +1,40 @@
-= Nachrichten zur modernen Softwareentwicklung (28. April 2026) =
+= Nachrichten zur modernen Softwareentwicklung (27. April 2026) =
 
-== Künstliche Intelligenz ==
+== KI in der Softwareentwicklung ==
+Die Integration von Künstlicher Intelligenz in den Entwicklungsalltag hat im April 2026 einen deutlichen Wendepunkt erreicht. Der Fokus verlagert sich branchenweit von einfachen Autovervollständigungs-Tools hin zu autonom agierenden "Software-Engineering-Agenten".
 
-=== Entwicklungsumgebungen (IDE) & Agenten ===
-'''KI-native Entwicklungsumgebungen und Terminal-Agenten:'''
-Laut der aktuellen JetBrains "AI Pulse"-Umfrage von Ende April 2026 nutzen mittlerweile 90 % der professionellen Entwickler mindestens ein KI-Werkzeug bei der Arbeit. Bei den Terminal-Agenten verzeichnet "Claude Code" eine rasant wachsende Verbreitung und erzielt weiterhin Spitzenwerte im "SWE-bench Verified"-Benchmark für komplexe Debugging-Aufgaben. Technologisch vollzieht sich in den IDEs ein Paradigmenwechsel: Weg vom simplen "Prompt-Chaining", hin zu "Code-First"-Agenten-Frameworks, die verbesserte Observability, integriertes Debugging über sogenannte Browser-DevUIs und Langzeitgedächtnis-Funktionen bieten<ref>Suchergebnis via dev.to vom 28. April 2026.</ref>.
+=== Entwicklungsumgebungen (IDE) ===
+* '''JetBrains & VS Code:''' JetBrains treibt sein "Open Ecosystem" voran und hat im April offiziell die Unterstützung für das Agent Client Protocol (ACP) integriert, wodurch Drittanbieter-Agenten nahtlos innerhalb der JetBrains-IDEs laufen können. VS Code bleibt währenddessen das dominierende, flexible Fundament für standardisierte KI-Workflows in Unternehmen, da es eine Vielzahl von Erweiterungen und Agenten hosten kann.
+* '''KI-native Entwicklungsumgebungen:''' Cursor hat Anfang April Version 3 veröffentlicht, die für verbesserte Performance in Rust und TypeScript neu geschrieben wurde. Zudem ist Cursor nun dank ACP nicht mehr nur ein Fork von VS Code, sondern kann als Agent direkt in JetBrains genutzt werden.
+* '''Terminal-Agenten:''' Terminal-basierte Agenten (wie Claude Code) erfreuen sich wachsender Beliebtheit für komplexe Architektur- und Analyseaufgaben. Mit neuen Desktop-GUIs und Modellen wie Opus 4.7 bieten sie verbesserte Selbstverifizierung für langlaufende Aufgaben, die im Hintergrund ausgeführt werden.
 
-'''Agenten-Orchestrierung, Multi-Agenten-Systeme (MAS) & Agents SDKs:'''
-Der Markt für SDKs und Agenten-Orchestrierung konsolidiert sich weiter auf Enterprise-Niveau. Microsoft hat soeben das "Microsoft Agent Framework 1.0" veröffentlicht, welches die bisherigen Lösungen "Semantic Kernel" und "AutoGen" zusammenführt. Google zieht mit dem neuen "Agent Development Kit (ADK)" für die Gemini Enterprise-Plattform nach. Für die praktische Umsetzung stellte Microsoft zudem die "Toolboxes" (Public Preview in der Foundry-Plattform) vor, um Werkzeuge mit zentraler Authentifizierung (OAuth/Entra ID) zu bündeln. Parallel dazu migrieren immer mehr Großunternehmen auf Multi-Agenten-Systeme – ein prominentes Beispiel ist "MINDR" der Deutschen Telekom für den autonomen Netzwerkbetrieb<ref>Suchergebnis via dev.to, devops.com und google.com vom 28. April 2026.</ref>.
+=== Agenten-Orchestrierung & Multi-Agenten-Systeme (MAS) ===
+* '''Frameworks & Cloud-Agenten:''' Die IT-Branche standardisiert zunehmend Systeme aus spezialisierten Agenten, die kollaborieren (Agent-to-Agent/A2A). Frameworks wie LangGraph (für zustandsbehaftete Orchestrierung) und Microsoft AutoGen sind führend. Google Cloud präsentierte im April seine "Gemini Enterprise Agent Platform" inklusive Agent Studio und A2A-Orchestrierung. Cloudflare fokussierte sich kürzlich auf die "Agentic Cloud", um Agenten direkt an der Edge auszuführen.
+* '''Agents SDK:''' Anbieter wie OpenAI haben ihre Agents SDKs mit neuen Sandbox- und Dateisystem-Tools aktualisiert, um komplexere, autonome Business-Workflows mit sicheren Grenzen zu ermöglichen.
 
-=== Protokolle ===
-'''Model Context Protocol (MCP) & Agent Client Protocol (ACP):'''
-Das Model Context Protocol (MCP) hat mit über 110 Millionen monatlichen Downloads seine Position als Integrationsstandard gefestigt und wird nun von der "Agentic AI Foundation" (unterstützt von Anthropic, Google, Microsoft, OpenAI u.a.) verwaltet. Die Roadmap 2026 kündigt neue "Tasks"-Primitive für autonome Workflows, natives Streaming sowie "MCP Triggers" (Webhooks) an. Innerhalb der Architektur-Community wird derweil eine stärkere Differenzierung diskutiert: MCP dient primär der vertikalen Integration (Werkzeuge/Daten), während für die horizontale Kommunikation zwischen Agenten zunehmend A2A-Protokolle (Agent-to-Agent) zum Einsatz kommen. Gleichzeitig stehen Sicherheitsfragen im Fokus, insbesondere der Umgang mit Remote Code Execution (RCE) in MCP-basierten Architekturen<ref>Suchergebnis via youtube.com, airbyte.com und morphllm.com vom 28. April 2026.</ref>.
+=== Agent Client Protocol (ACP) & Model Context Protocol (MCP) ===
+* '''Model Context Protocol (MCP):''' MCP hat sich als universeller Standard für die Verbindung von KI-Modellen mit Datenquellen etabliert. Ein großer Trend in 2026 sind "MCP Apps", die es Tools erlauben, interaktive UI-Komponenten direkt in Chat-Fenster zurückzugeben.
+* '''Agent Client Protocol (ACP):''' ACP konzentriert sich stark auf die Entwicklererfahrung. Es definiert, wie Coding-Agenten mit IDEs kommunizieren. Durch ACP wird die Interoperabilität zwischen Agenten (wie Cursor) und IDEs (wie JetBrains) hergestellt, ohne dass fragile, dedizierte Plugins entwickelt werden müssen.
 
-== Programmiersprachen & Frameworks ==
+=== Retrieval-Augmented Generation (RAG) ===
+* RAG hat die experimentelle Phase hinter sich gelassen und entwickelt sich hin zu '''"Knowledge Runtimes"'''. Anstelle von "naivem" RAG setzen Unternehmen 2026 auf hochpräzise Orchestrierungsschichten, die hybride Suche (Vektor- und lexikalische Suche) sowie Cross-Encoder für das Re-Ranking nutzen. Auch Multimodal-RAG, welches Code, technische Zeichnungen und Text vereint, gehört zunehmend zum Enterprise-Standard.
 
-=== ASP.NET Core MVC ===
-Für Entwickler von ASP.NET Core MVC bringt das aktuelle Visual Studio Update 18.5.0 ein lang ersehntes Feature: Die direkte Navigation zur Quelldefinition von Tag-Helpern und deren Attributen aus Razor-Dateien heraus (via F12 oder Strg+Klick). Daneben betonte JetBrains kürzlich die Vorteile ihrer Dynamic Program Analysis (DPA) zur effizienten Identifizierung von Performance-Engpässen in ASP.NET Core MVC-Anwendungen ohne den Einsatz komplexer Profiler. Zudem hat Microsoft in seinen April-Updates mehrere Sicherheitslücken behoben, darunter Fehler bei der Autorisierung sowie Probleme mit unkontrolliertem Ressourcenverbrauch<ref>Suchergebnis via microsoft.com und jetbrains.com vom 28. April 2026.</ref>.
+=== Webbasierte & No-Code/Low-Code Plattformen ===
+* Automatisierungsplattformen wie '''n8n''' und '''Zapier''' haben den Trend der Agenten-Orchestrierung aufgegriffen und bieten nun spezialisierte Funktionen, um komplexe, iterative KI-Agenten-Schleifen auch ohne tiefgehende Programmierkenntnisse zu konfigurieren und in Geschäftsprozesse einzubinden.
 
-=== Spring Boot ===
-Im Spring-Ökosystem stehen wichtige Versionssprünge an: Ende April wurde der erste Release Candidate für Spring Boot 4.1.0 (RC1) veröffentlicht. Dieser bringt über 100 Verbesserungen, darunter die SSRF-Mitigation für HTTP-Clients via `InetAddressFilter` und Unterstützung für Umgebungsvariablen des OpenTelemetry SDKs. Zeitgleich adressiert das Release Spring Boot 4.0.6 mehrere CVEs im Zusammenhang mit Elasticsearch, RabbitMQ und Cassandra SSL. Nutzer älterer Versionen wurden außerdem daran erinnert, dass die kostenfreien Maintenance-Releases für Spring Boot 3.5 im Juni 2026 enden<ref>Suchergebnis via spring.io und infoq.com vom 28. April 2026.</ref>.
+== Programmiersprachen ==
+=== ASP.NET Core MVC AI & Spring Boot AI ===
+* '''Spring Boot AI:''' Im Spring-Ökosystem liegt der Fokus 2026 klar auf "Agentic Workflows". Neue Releases (wie 1.1.4 und 2.0.0-M4) nutzen eine "Advisor Architecture", die Fähigkeiten wie RAG und Memory als komponierbare Middleware bereitstellt. Spring Boot treibt dabei aktiv die Standardisierung über das Model Context Protocol (MCP) voran.
+* '''ASP.NET Core MVC AI:''' Die `.NET`-Welt hat künstliche Intelligenz nativ integriert. Die Bibliothek `Microsoft.Extensions.AI` ist nun produktionsreif (GA) und liefert Standard-Abstraktionen für diverse Provider. Das neue "Microsoft Agent Framework" bündelt zudem Werkzeuge wie den Semantic Kernel, was ASP.NET Core zu einer bevorzugten Plattform für den Bau robuster, Backend-gestützter Multi-Agenten-Systeme macht.
+
+== Weitere relevante Themen der Softwareentwicklung ==
+* '''Edge-Native Intelligence:''' Ein starker Trend vom April 2026 ist die Verlagerung von KI-Inferenz auf Edge-Geräte. Durch technologische Durchbrüche bei der Komprimierung (wie TurboQuant) lassen sich leistungsstarke Modelle zunehmend lokal und ressourcenschonend ausführen.
+* '''Auswirkungen auf den IT-Arbeitsmarkt:''' Die Verbreitung von autonomen Coding-Agenten, die selbstständig Codebasen refaktorieren und Pull Requests erstellen können, verändert die Rolle des Softwareentwicklers rapide hin zu einem "Reviewer und Dirigenten", was neue Anforderungen an interdisziplinäre Fähigkeiten stellt.
 
 == Quellen ==
-<references />
+* <ref>[https://jetbrains.com/ JetBrains Insights & Updates (Agent Client Protocol & Cursor Integration, April 2026)]</ref>
+* <ref>[https://microsoft.com/ Microsoft Copilot Studio & .NET/ASP.NET Core AI Announcements (2026)]</ref>
+* <ref>[https://spring.io/ Spring AI Release Notes & Documentation (2026)]</ref>
+* <ref>[https://medium.com/ Diverse Fachartikel auf Medium zur Evolution von RAG und Agenten-Orchestrierung (April 2026)]</ref>
+* <ref>[https://openai.com/ OpenAI Updates für Agents SDK und Workspace Agents]</ref>
+* <ref>[https://cloudflare.com/ Cloudflare Agents Week 2026 Announcements]</ref>

@@ -4,6 +4,8 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 
 - KI 
   - Entwicklungsumgebungen (IDE)
+    - Jetbrains
+    - Visual Studio Code
     - Terminal-Agenten (Coding & System)
     - KI-native Entwicklungsumgebungen (IDE)
     - KI-Plugins für Entwicklungsumgebungen (IDE)
@@ -14,7 +16,8 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
   - Agent Client Protocol (ACP)
   - Model Context Protocol (MCP)
   - Retrieval-Augmented Generation (RAG)
-- Programmiersprachen: Nur ASP.NET Core MVC und Spring Boot 
+  - Webbasierte & No-Code/Low-Code Plattformen
+- Programmiersprachen: Nur ASP.NET Core MVC  AI und Spring Boot Ai
 
 Gib Quellenangaben an.
 
