@@ -1,0 +1,25 @@
+= Nachrichten zur modernen Softwareentwicklung (28. April 2026) =
+
+== Künstliche Intelligenz ==
+
+=== Entwicklungsumgebungen (IDE) & Agenten ===
+'''KI-native Entwicklungsumgebungen und Terminal-Agenten:'''
+Laut der aktuellen JetBrains "AI Pulse"-Umfrage von Ende April 2026 nutzen mittlerweile 90 % der professionellen Entwickler mindestens ein KI-Werkzeug bei der Arbeit. Bei den Terminal-Agenten verzeichnet "Claude Code" eine rasant wachsende Verbreitung und erzielt weiterhin Spitzenwerte im "SWE-bench Verified"-Benchmark für komplexe Debugging-Aufgaben. Technologisch vollzieht sich in den IDEs ein Paradigmenwechsel: Weg vom simplen "Prompt-Chaining", hin zu "Code-First"-Agenten-Frameworks, die verbesserte Observability, integriertes Debugging über sogenannte Browser-DevUIs und Langzeitgedächtnis-Funktionen bieten<ref>Suchergebnis via dev.to vom 28. April 2026.</ref>.
+
+'''Agenten-Orchestrierung, Multi-Agenten-Systeme (MAS) & Agents SDKs:'''
+Der Markt für SDKs und Agenten-Orchestrierung konsolidiert sich weiter auf Enterprise-Niveau. Microsoft hat soeben das "Microsoft Agent Framework 1.0" veröffentlicht, welches die bisherigen Lösungen "Semantic Kernel" und "AutoGen" zusammenführt. Google zieht mit dem neuen "Agent Development Kit (ADK)" für die Gemini Enterprise-Plattform nach. Für die praktische Umsetzung stellte Microsoft zudem die "Toolboxes" (Public Preview in der Foundry-Plattform) vor, um Werkzeuge mit zentraler Authentifizierung (OAuth/Entra ID) zu bündeln. Parallel dazu migrieren immer mehr Großunternehmen auf Multi-Agenten-Systeme – ein prominentes Beispiel ist "MINDR" der Deutschen Telekom für den autonomen Netzwerkbetrieb<ref>Suchergebnis via dev.to, devops.com und google.com vom 28. April 2026.</ref>.
+
+=== Protokolle ===
+'''Model Context Protocol (MCP) & Agent Client Protocol (ACP):'''
+Das Model Context Protocol (MCP) hat mit über 110 Millionen monatlichen Downloads seine Position als Integrationsstandard gefestigt und wird nun von der "Agentic AI Foundation" (unterstützt von Anthropic, Google, Microsoft, OpenAI u.a.) verwaltet. Die Roadmap 2026 kündigt neue "Tasks"-Primitive für autonome Workflows, natives Streaming sowie "MCP Triggers" (Webhooks) an. Innerhalb der Architektur-Community wird derweil eine stärkere Differenzierung diskutiert: MCP dient primär der vertikalen Integration (Werkzeuge/Daten), während für die horizontale Kommunikation zwischen Agenten zunehmend A2A-Protokolle (Agent-to-Agent) zum Einsatz kommen. Gleichzeitig stehen Sicherheitsfragen im Fokus, insbesondere der Umgang mit Remote Code Execution (RCE) in MCP-basierten Architekturen<ref>Suchergebnis via youtube.com, airbyte.com und morphllm.com vom 28. April 2026.</ref>.
+
+== Programmiersprachen & Frameworks ==
+
+=== ASP.NET Core MVC ===
+Für Entwickler von ASP.NET Core MVC bringt das aktuelle Visual Studio Update 18.5.0 ein lang ersehntes Feature: Die direkte Navigation zur Quelldefinition von Tag-Helpern und deren Attributen aus Razor-Dateien heraus (via F12 oder Strg+Klick). Daneben betonte JetBrains kürzlich die Vorteile ihrer Dynamic Program Analysis (DPA) zur effizienten Identifizierung von Performance-Engpässen in ASP.NET Core MVC-Anwendungen ohne den Einsatz komplexer Profiler. Zudem hat Microsoft in seinen April-Updates mehrere Sicherheitslücken behoben, darunter Fehler bei der Autorisierung sowie Probleme mit unkontrolliertem Ressourcenverbrauch<ref>Suchergebnis via microsoft.com und jetbrains.com vom 28. April 2026.</ref>.
+
+=== Spring Boot ===
+Im Spring-Ökosystem stehen wichtige Versionssprünge an: Ende April wurde der erste Release Candidate für Spring Boot 4.1.0 (RC1) veröffentlicht. Dieser bringt über 100 Verbesserungen, darunter die SSRF-Mitigation für HTTP-Clients via `InetAddressFilter` und Unterstützung für Umgebungsvariablen des OpenTelemetry SDKs. Zeitgleich adressiert das Release Spring Boot 4.0.6 mehrere CVEs im Zusammenhang mit Elasticsearch, RabbitMQ und Cassandra SSL. Nutzer älterer Versionen wurden außerdem daran erinnert, dass die kostenfreien Maintenance-Releases für Spring Boot 3.5 im Juni 2026 enden<ref>Suchergebnis via spring.io und infoq.com vom 28. April 2026.</ref>.
+
+== Quellen ==
+<references />
