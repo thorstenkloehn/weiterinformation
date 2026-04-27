@@ -1,19 +1,20 @@
-Suche im Web nach Nachrichten zur modernen Softwareentwicklung, die für die Softwareentwicklung relevant sind. nur heute 
-Weitere Themen: Suche im Web nach Nachrichten zu nur heute, bezüglich:
-- KI heute, bezüglich
+Suche im Web nach Nachrichten zur modernen Softwareentwicklung, die für die Softwareentwicklung relevant sind – ausschließlich von heute (nicht älter als 24 Stunden). Nimm keine Themen auf, die keinen klaren Bezug zu diesen Themen haben.
+
+Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. Wenn das Thema nicht explizit im Titel oder Artikel genannt wird, aber einen klaren Bezug hat, nimm es bitte auf. Nimm keine Themen auf, die keinen klaren Bezug zu diesen Themen haben. Nur Nachrichten von heute (nicht älter als 24 Stunden).
+
+- KI heute, bezüglich:
   - Entwicklungsumgebungen (IDE)
     - Terminal-Agenten (Coding & System)
     - KI-native Entwicklungsumgebungen (IDE)
-    - KI-Plugin für Entwicklungsumgebungen (IDE)
+    - KI-Plugins für Entwicklungsumgebungen (IDE)
     - Agenten-Orchestrierung & Multi-Agenten-Systeme (MAS)
       - Frameworks
     - Agents SDK
-     - Cloud-Agenten
+    - Cloud-Agenten
   - Agent Client Protocol (ACP)
   - Model Context Protocol (MCP)
   - Retrieval-Augmented Generation (RAG)
-- Programmiersprachen nur Aspet core mvc und Spring Boot heute, bezüglich
-
+- Programmiersprachen: Nur ASP.NET Core MVC und Spring Boot – nur Nachrichten von heute
 
 Gib Quellenangaben an.
 
