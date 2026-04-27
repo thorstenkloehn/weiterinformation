@@ -1,0 +1,41 @@
+= Nachrichten zur modernen Softwareentwicklung – 26. April 2026 =
+
+== Künstliche Intelligenz (KI) in der Softwareentwicklung ==
+
+=== Entwicklungsumgebungen (IDE) ===
+Die Landschaft der KI-gestützten Entwicklung wird im April 2026 von einer klaren Unterteilung in drei Bereiche dominiert:
+
+* '''Terminal-Agenten (Coding & System):''' Werkzeuge wie ''Claude Code'', ''Codex CLI'' und das kürzlich veröffentlichte ''Gemini CLI'' arbeiten direkt auf der Kommandozeile. Sie bieten eine hohe Autonomie für komplexe, repository-übergreifende Refactorings, Fehlerbehebungen und tiefgreifende Git-Integrationen.<ref>Quelle: nimbalyst.com, "The State of AI Terminal Agents", April 2026</ref>
+* '''KI-native Entwicklungsumgebungen (IDE):''' Editoren, die von Grund auf um KI-Modelle herum gebaut wurden, wie ''Cursor'' und ''Windsurf (von Codeium)'', dominieren den Markt der KI-nativen IDEs. Ihre "Composer"- und "Cascade"-Modi erlauben visuelle, dateiübergreifende Bearbeitungen und eine hochpräzise Code-Indizierung.<ref>Quelle: revoyant.com, "AI-Native IDEs in 2026"</ref>
+* '''KI-Plugin für Entwicklungsumgebungen (IDE):''' Etablierte Plugins wie der ''GitHub Copilot'' (nun mit Unterstützung für Multi-Model-Backends), der ''JetBrains AI Assistant'' sowie VS Code-Erweiterungen wie ''Cline / Roo Code'' haben sich stark weiterentwickelt. Sie bieten mittlerweile vollumfängliche agentische Workflows wie autonome Code-Reviews und "Issue-to-PR"-Abläufe direkt im Standard-Editor.<ref>Quelle: github.com, "Copilot Updates", April 2026</ref>
+
+=== Agenten-Orchestrierung & Multi-Agenten-Systeme (MAS) ===
+Der Trend geht massiv weg von einzelnen Chatbots hin zu koordinierten Multi-Agenten-Systemen (MAS), die zunehmend in Produktionsumgebungen von Großunternehmen eingesetzt werden. Moderne Architekturen nutzen sogenannte "Control Planes", um Workflows und Agent-to-Agent (A2A)-Delegationen zu steuern.<ref>Quelle: medium.com, "Multi-Agent Orchestration Trends", April 2026</ref>
+
+* '''Frameworks:''' Führende Frameworks für die Orchestrierung sind derzeit ''LangGraph'' (für komplexe, zustandsbehaftete Workflows mit Human-in-the-Loop), ''CrewAI'' (für rollenbasierte Teams), ''LlamaIndex Workflows'' (für RAG-basierte Agenten) sowie das ''Google Agent Development Kit (ADK)''.<ref>Quelle: alicelabs.ai, "Agent Frameworks overview"</ref>
+* '''Agents SDK:''' Leichtgewichtige Toolkits wie das ''OpenAI Agents SDK'' und das ''Microsoft 365 Agents SDK'' (verfügbar in Copilot Studio) erfreuen sich wachsender Beliebtheit zur Erstellung abgesicherter Multi-Agenten-Workflows mit integrierten Sandbox-Umgebungen.<ref>Quelle: epsilla.com, "Agents SDK adoption", April 2026</ref>
+* '''Cloud-Agenten:''' Enterprise-Plattformen verlagern agentische Systeme zunehmend in die Cloud. Plattformen wie Gemini Enterprise bieten nun langlebigen Kontextspeicher ("Memory Bank") für cloudbasierte Agenten, die asynchron im Hintergrund operieren.<ref>Quelle: google.com, "Gemini Enterprise Updates", April 2026</ref>
+
+=== Standards und Protokolle: ACP und MCP ===
+Im April 2026 haben sich klare Standards für die Agenten-Kommunikation etabliert, um die Fragmentierung im Markt zu überwinden:
+
+* '''Agent Client Protocol (ACP):''' ACP hat sich als Standard für die Kommunikation zwischen Code-Editoren und KI-Agenten bewährt. Es nutzt JSON-RPC 2.0 über stdio, um den Agenten Dateizugriffe oder Terminal-Befehle im Editor zu ermöglichen, ohne für jede IDE eigenen "Glue Code" schreiben zu müssen.<ref>Quelle: shashikantjagtap.net, "Agent Client Protocol usage", April 2026</ref>
+* '''Model Context Protocol (MCP):''' MCP fungiert als das universelle "USB-C der KI". Es ist der etablierte Standard für die Verbindung von Agenten mit externen Werkzeugen und Echtzeit-Datenquellen (wie Datenbanken oder ERP-Systemen) und wird weitreichend adaptiert.<ref>Quelle: fifthrow.com, "MCP standardization", April 2026</ref>
+
+=== Retrieval-Augmented Generation (RAG) ===
+RAG hat sich von einfachen statischen Pipelines hin zu "Agent-Driven RAG" entwickelt. Moderne Systeme sind nun agentisch – der Agent entscheidet dynamisch, wann, wo und wonach gesucht werden soll, anstatt starren Suchabläufen zu folgen. Führende Architekturen kombinieren dabei Orchestrierungs-Layer mit spezialisierten Retrieval-Layern.<ref>Quelle: tredence.com, "Evolution of RAG systems", April 2026</ref>
+
+== Programmiersprachen & Frameworks ==
+
+=== ASP.NET Core MVC (Heute) ===
+Im .NET-Ökosystem bleibt ASP.NET Core eine zentrale Technologie für hochperformante Cloud-Anwendungen.
+* '''Entwicklung:''' Aktuell verschiebt sich der Fokus zunehmend von klassischem MVC hin zu leichtgewichtigen "Minimal APIs" als empfohlene Methode für den Bau schneller HTTP-Endpunkte.
+* '''Trends:''' Es gibt einen starken Trend zur nativen KI-Integration (häufig über Azure AI) direkt in die Anwendungen. Zudem wird die Cloud-Native-Entwicklung durch native AOT-Kompilierung (Ahead-of-Time) weiter vorangetrieben, um Kaltstartzeiten in Container-Umgebungen drastisch zu reduzieren.<ref>Quelle: niotechone.com, "ASP.NET Core Trends 2026"</ref>
+
+=== Spring Boot (Heute) ===
+Das Java-Ökosystem steht im April 2026 im Zeichen von Spring Boot 4.x (aktuell Version 4.1.0 RC).
+* '''Entwicklung:''' Zu den wichtigsten technologischen Treibern gehört "Spring AI", das die Entwicklung von RAG-Pipelines und agentischen Systemen in Java massiv vereinfacht.
+* '''Trends:''' Die Architektur verschiebt sich spürbar in Richtung ereignisgesteuerter Systeme (Event-Driven) sowie Orchestrierung durch Workflow-Engines. Darüber hinaus ist fortschrittliche Observability mittels OpenTelemetry und Micrometer mittlerweile obligatorisch ("Cloud-Native by default").<ref>Quelle: infoq.com, "Spring Boot 4.1.0 Updates", April 2026</ref>
+
+== Quellenübersicht ==
+<references />
