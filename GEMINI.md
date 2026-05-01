@@ -18,6 +18,13 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
   - Retrieval-Augmented Generation (RAG)
   - Webbasierte & No-Code/Low-Code Plattformen
 - Programmiersprachen: Nur ASP.NET Core MVC  AI und Spring Boot Ai
+-  KVM-Servern anmieten
+- Dedizierter Server mieten
+- Ai Server mieten
+- Cloud KI Services
+- Sprachmodelle Anbieter 
+- Sprachmodelle trainieren und betreiben 
+- Sprachmodelle Server mieten
 
 Gib Quellenangaben an.
 
