@@ -1,42 +1,38 @@
-= Nachrichten zur modernen Softwareentwicklung (30. April 2026) =
+= IT & Softwareentwicklung: Nachrichten vom 1. Mai 2026 =
 
-== Künstliche Intelligenz (KI) ==
+== Künstliche Intelligenz (KI) in der Softwareentwicklung ==
 
-=== Entwicklungsumgebungen (IDE) ===
-* '''JetBrains & KI-Integration:''' JetBrains positioniert seine IDEs zunehmend als zentralen Ort, um von KI generierten Code zu "überprüfen, verstehen und zu besitzen". Das Unternehmen führte kürzlich einen "Codex Hackathon" durch und stellt neue agentenbasierte Frameworks wie "Koog" (für Spring AI und Java) sowie einen Skill Manager zur gemeinsamen Nutzung von Agenten-Fähigkeiten vor. Ziel ist es, die schnelle KI-Ausgabe mit besserer Disziplin bei Code-Reviews und technischer Schuld zu vereinen. [https://www.jetbrains.com/ Quelle: JetBrains]
-* '''Visual Studio Code & GitHub Copilot:''' Version 1.118 von VS Code wurde am 29. April 2026 veröffentlicht, mit einem starken Fokus auf Token-Effizienz (z.B. Prompt Caching). Dies ist eine Reaktion auf die bevorstehende Umstellung von GitHub Copilot auf eine nutzungsbasierte Abrechnung ab dem 1. Juni 2026. [https://visualstudiomagazine.com/ Quelle: Visual Studio Magazine]
-* '''Visual Studio 2026:''' Das April-Update (v18.5) integriert GitHub Copilots Cloud-Agenten tiefer in den Chat-Picker und ermöglicht asynchrone Workflows, die auf GitHub Actions-Infrastruktur ausgeführt werden, während der Entwickler weiterarbeitet. [https://visualstudiomagazine.com/ Quelle: Visual Studio Magazine]
-* '''Terminal-Agenten:''' Die Entwicklung von Terminal-Agenten bleibt aktiv. Neue Forschung konzentriert sich auf die Optimierung der Kontextverarbeitung für Agenten in Terminalumgebungen (z.B. TACO zur Kontextkomprimierung) und Data-Engineering-Pipelines wie NVIDIA's Nemotron-Terminal, um die Leistung autonomer Agenten in der Softwareentwicklung zu verbessern. [https://www.reddit.com/ Quelle: Reddit/Tech-Communities]
-* '''KI-native IDEs & Governance:''' Der Zed-Editor erreichte Version 1.0 und zieht Entwickler an, die eine leistungsstarke Alternative suchen. Gleichzeitig kündigte ActiveState erweiterte Unterstützung für KI-gestützte Entwicklung (inkl. JetBrains AI, Cursor, Windsurf) an, um eine Sicherheitsschicht für von KI integrierte Abhängigkeiten zu bieten. [https://www.morningstar.com/ Quelle: Morningstar]
+=== Entwicklungsumgebungen (IDE) & Agenten ===
 
-=== Agenten-Orchestrierung & Multi-Agenten-Systeme (MAS) ===
-* '''Sicherheit in Multi-Agenten-Systemen:''' Eine am 29. April aktualisierte Studie "Open Challenges in Multi-Agent Security" schlägt das neue Feld der "Multi-Agenten-Sicherheit" vor, um aufkommende Bedrohungen wie geheime Absprachen, koordinierte Schwarmangriffe und Datenvergiftung in Netzwerken interagierender KI-Agenten anzugehen. [https://letsdatascience.com/ Quelle: Let's Data Science]
-* '''Enterprise Identity & Frameworks:''' Okta betont die Notwendigkeit von KI-Agenten-Identitäten als zentrale Sicherheitsanforderung für die Ausführung komplexer, mehrstufiger Workflows in Unternehmensumgebungen. Circles kündigte eine Meilenstein-Zusammenarbeit mit OpenAI an, um seinen KI-nativen Telco-Stack mit einer proprietären Multi-Agenten-Architektur zu betreiben. [https://aiagentsdirectory.com/ Quelle: AI Agents Directory]
+==== Jetbrains ====
+JetBrains hat seine aktuelle Roadmap für das Jahr 2026 vorgestellt, welche die Verschmelzung von "klassischem" Code und "neuen" KI-Workflows forciert. Die bedeutendsten Neuerungen umfassen den '''Skills Manager''' und das '''Skill Repository'''. Damit können Entwickler wiederverwendbare KI-Fähigkeiten, wie beispielsweise automatisiertes Debugging oder Pull-Request-Kommentare, zentral installieren und projektübergreifend nutzen. Um einer Herstellerbindung entgegenzuwirken, setzt JetBrains zunehmend auf das '''Agent Client Protocol (ACP)'''. Für Enterprise-Kunden wurde zudem das Framework '''Koog''' für die Agenten-Orchestrierung auf der JVM vorgestellt, welches unter anderem eine native Integration für Spring AI bietet.<ref>[https://blog.jetbrains.com/ai/ JetBrains AI Roadmap und Updates, 1. Mai 2026]</ref>
 
-=== Agents SDK & Cloud-Agenten ===
-* '''OpenAI Agents SDK:''' Mitte April veröffentlichte OpenAI bedeutende Updates für sein Agents SDK, die sich auf Produktionsreife und sichere Ausführung konzentrieren. Diese Updates, die am 30. April in Unternehmensanwendungen wie bei Oscar Health hervorgehoben wurden, vereinfachen die Entwicklung von Agenten für komplexe, langfristige Aufgaben und bieten native Sandbox-Ausführungen. [https://seekingalpha.com/ Quelle: Seeking Alpha]
+==== Visual Studio Code ====
+Microsoft vertieft die Integration von GitHub Copilot in VS Code. Copilot ist mittlerweile als Standard-Erweiterung tief im System verankert und fungiert standardmäßig als Git-Co-Autor für Codeänderungen, die von der KI generiert wurden. Ein wesentliches Update ist die Vorschau der neuen '''VS Code Agents App''', die parallele, agentenbasierte Workflows über verschiedene Repositories hinweg ermöglicht. Ferner erlauben neue "Terminal Agent Tools" den KI-Agenten, direkt und eigenständig mit Terminal-Sitzungen zu interagieren.<ref>[https://visualstudio.microsoft.com/ VS Code Release Notes und KI-Updates, 1. Mai 2026]</ref>
 
-=== Agent Client Protocol (ACP) ===
-* '''Wachstum des ACP-Ökosystems:''' Das Agent Client Protocol (ACP) gewinnt als offener Standard für die Verbindung von KI-Coding-Agenten mit IDEs weiter an Dynamik. JetBrains und Zed haben ihre Unterstützung für ACP bekräftigt, um Vendor-Lock-in zu verhindern. Entwickler können nun externe Agenten (wie den Cursor-Agenten) über diese Schnittstelle anbinden. [https://zed.dev/ Quelle: Zed.dev / JetBrains]
+==== Agent Client Protocol (ACP) & Model Context Protocol (MCP) ====
+Das '''Model Context Protocol (MCP)''' festigt im Mai 2026 seine Rolle als Industriestandard (oft als "USB-C für KI" bezeichnet) und wird mittlerweile von der Agentic AI Foundation (Linux Foundation) verwaltet. Der aktuelle Fokus der Working Groups liegt auf Skalierbarkeit, sicherer Agenten-Kommunikation und Enterprise-Readiness. Gleichzeitig gewinnt das '''Agent Client Protocol (ACP)''' an Relevanz, da es die Standardisierung für die Verbindung von IDEs mit externen Coding-Agenten vorantreibt.<ref>[https://modelcontextprotocol.io/ Model Context Protocol Roadmap 2026]</ref><ref>[https://www.generect.com/ Generect: MCP als Industriestandard]</ref>
 
-=== Model Context Protocol (MCP) ===
-Das MCP verzeichnete am 30. April bedeutende neue Integrationen:
-* '''Higgsfield AI''' startete einen MCP-Server mit Anthropic’s Claude zur Generierung und Optimierung visueller Inhalte. [https://phemex.com/ Quelle: Phemex]
-* '''Definely''' veröffentlichte eine MCP-Integration für Rechtsteams, um spezialisierte Vertragsprüfungs-Tools in Unternehmens-KIs aufzurufen. [https://legaltechnology.com/ Quelle: Legal Technology]
-* '''AdKit''' ermöglicht es KI-Agenten via MCP, Werbekampagnen (Google, Meta) durch natürliche Sprache zu verwalten. [https://newsfilecorp.com/ Quelle: Newsfile Corp]
-* '''Living Security''' kündigte eine MCP-Integration für seine Risiko-Intelligenz-Engine an, um menschliche Risikoeinblicke in Plattformen wie Microsoft Copilot einzubetten. [https://www.morningstar.com/ Quelle: Morningstar]
+==== Agenten-Orchestrierung & Terminal-Agenten ====
+Am heutigen 1. Mai 2026 veröffentlichte eine internationale Koalition von Cybersicherheitsbehörden (u.a. aus den USA, Großbritannien und Australien) eine eindringliche Warnung bezüglich '''Agentic AI'''. Autonome Agenten, die über Terminal-Zugriff verfügen und multi-step Aktionen in Netzwerken ausführen, vergrößern die Angriffsfläche für Unternehmen drastisch. Es wird empfohlen, strenge Identitätsverwaltungen (kryptografische Identitäten für Agenten) einzuführen und bei kritischen Infrastruktur-Eingriffen weiterhin einen "Human-in-the-loop" vorauszusetzen.<ref>[https://cyberscoop.com/ CyberScoop: Cybersecurity Agencies Warn on Agentic AI, 1. Mai 2026]</ref>
 
-=== Retrieval-Augmented Generation (RAG) ===
-* '''Architektonischer Wandel:''' Analysen vom 30. April deuten auf einen Übergang von RAG als reiner "Hilfsinfrastruktur" zu stärker integrierten, prädiktiven Datenschichten innerhalb des KI-Stacks hin. [https://dataconomy.com/ Quelle: Dataconomy]
-* '''Klinische Genauigkeit & Public Health:''' Ein neues Review betont die Wichtigkeit von RAG in der Onkologie für klinische Genauigkeit. Die WHO startete das KI-Tool "ChatHRP", das RAG nutzt, um referenzierte Gesundheitsinformationen bereitzustellen und Fehlinformationen zu minimieren. [https://www.eurekalert.org/ Quelle: Eurekalert / WHO]
-
-=== Webbasierte & No-Code/Low-Code Plattformen ===
-* '''GPTBots.ai auf dem Huawei Summit:''' Am 30. April 2026 präsentierte die Plattform GPTBots.ai von Aurora Mobile ihr No-Code/Low-Code KI-Agenten-Entwicklungsframework auf dem Huawei Thailand Partner Summit. Es ermöglicht Unternehmen die schnelle Bereitstellung von Agenten für Vertrieb und Kundenservice ohne tiefe Infrastrukturkenntnisse. [https://www.ft.com/ Quelle: Financial Times]
-
-== Programmiersprachen ==
-
-=== ASP.NET Core MVC AI ===
-* '''.NET 11 Preview 3 und Composable AI Stack:''' Microsoft veröffentlichte kürzlich .NET 11 Preview 3. Ein zentrales Thema in der .NET-Welt am 30. April ist Microsofts Fokus auf den "Composable AI Stack" für .NET. Neue Architekturrichtlinien betonen die Nutzung von Middleware-Mustern (ähnlich der Standard-ASP.NET Core Middleware) zur Verwaltung von KI-Verhalten wie Tool-Call-Loops und Observability (OpenTelemetry) durch das Wrapping des `IChatClient`. [https://www.infoq.com/ Quelle: InfoQ]
+== Programmiersprachen: ASP.NET Core MVC AI & Spring Boot AI ==
 
 === Spring Boot AI ===
-* '''Spring AI Release 2.0.0-M5:''' Am 27. April (mit fortlaufenden Diskussionen bis zum 30. April) veröffentlichte Spring AI die Versionen 1.0.6, 1.1.5 und 2.0.0-M5. Wichtige Architekturänderungen in 2.0.0-M5 beinhalten die Entfernung der Azure OpenAI-Module zugunsten des Standard-`spring-ai-openai`-Moduls. Dieses nutzt nun das offizielle OpenAI-Java SDK für alle Modellinteraktionen. Die Community fokussiert sich zudem verstärkt auf agentische Fähigkeiten und Agent-to-Agent-Kommunikation. [https://spring.io/ Quelle: Spring.io]
+Mit den neuen Meilenstein-Releases von '''Spring AI 2.0''' entwickelt sich das Spring-Ökosystem von einer einfachen Orchestrierungs-Bibliothek hin zu einer vollwertigen Plattform für Agentic-Workflows. Ein zentrales Feature ist die native Integration des Model Context Protocols (MCP) direkt in den Core, erkennbar an neuen Annotationen wie `@McpTool`. Die Architektur fokussiert sich zunehmend auf "Advisors", um RAG-Szenarien und das rekursive Planen von Agenten zu optimieren.<ref>[https://spring.io/blog/ Spring AI 2.0 Meilensteine und Updates, 1. Mai 2026]</ref>
+
+=== ASP.NET Core MVC AI ===
+ASP.NET Core etabliert sich parallel zu den .NET 11 Previews als Enterprise-Grade-Plattform für intelligente Webservices. Der Schwerpunkt liegt 2026 auf der nahtlosen Integration von Azure AI Services, Worker Services für Hintergrund-Vektorisierung und ML.NET. Aktuelle Updates für Visual Studio 2026 bringen zudem Copilot-Agenten, die Codebase-spezifische Skills automatisch erkennen und in MVC-Architekturen anwenden können.<ref>[https://devblogs.microsoft.com/dotnet/ .NET & ASP.NET Core AI Entwicklungen, Mai 2026]</ref>
+
+== Server, Infrastruktur & Sprachmodelle ==
+
+=== Dedizierte Server, KVM & AI Server mieten ===
+Der Markt für das Anmieten von Hardware ist extrem angespannt. Durch den hohen Bedarf an Rechenleistung für AI-Workloads erleben dedizierte Server eine Renaissance ("Cloud Repatriation"). Dies führt zu starken Preissteigerungen bei High-End-Systemen (insbesondere bei NVIDIA-Clustern), was Analysten heute als "Wait Tax" bezeichnen – sie raten Unternehmen dazu, sich langfristige Mietverträge für dedizierte Server und AI-Infrastruktur zu sichern. 
+Zudem gibt es im Bereich Virtualisierung am heutigen Tag eine kritische Sicherheitswarnung: Für KVM-Server wurde die Schwachstelle "Copy Fail" (CVE-2026-31431) gemeldet. Betreiber eigener Server werden dringend aufgefordert, ihre KVM-Systeme umgehend zu patchen, um potenzielle Root-Zugriffe durch lokale Nutzer zu verhindern.<ref>[https://www.hostrunway.com/ HostRunway: Dedicated Servers Renaissance, 1. Mai 2026]</ref><ref>[https://myhost.nz/ MyHost: KVM Security Vulnerability Alert, 1. Mai 2026]</ref>
+
+=== Sprachmodelle (LLMs), Anbieter & Cloud KI Services ===
+Bei den Sprachmodell-Anbietern verlagert sich der Fokus von reiner Textgenerierung hin zu spezialisierten "Work Models". Während OpenAI seine Modelle massiv auf Coding- und Computer-Use-Fähigkeiten optimiert, punktet Anthropic mit Claude 4.7 bei sicherheitskritischen Aufgaben. DeepSeek sichert sich zudem durch sehr große Kontextfenster bei aggressiver Preisgestaltung Marktanteile. 
+Ein aktueller, themenübergreifender Durchbruch vom heutigen Tag verdeutlicht zudem die Leistungsfähigkeit moderner LLMs: Eine in *Science* veröffentlichte Studie belegt, dass KI-Modelle menschliche Ärzte bei Diagnosen in der Notfallmedizin übertreffen, was weitreichende Folgen für den Einsatz von Cloud KI Services im Gesundheits- und Enterprise-Sektor haben dürfte.<ref>[https://www.inc.com/ Inc: LLM Clinical AI Breakthrough, 1. Mai 2026]</ref><ref>[https://mean.ceo/ LLM Market Landscape and Updates, Mai 2026]</ref>
+
+= Quellen =
+<references />
