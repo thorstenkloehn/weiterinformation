@@ -23,6 +23,12 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 - Ai Server mieten
 - Cloud KI Services
 - Sprachmodelle verschiedenen LLM-Anbietern und -Plattformen
+- Google Antigravity
+- Ollama
+- HuggingFace
+- Foundry Toolkit for Visual Studio Code
+- Neuesten Entwicklungen rund um die Programmiersprachen ASP.NET Core MVC AI und Spring Boot AI. Dies schließt relevante Frameworks, Tools, Best Practices und neue Funktionen dieser spezifischen AI-gestützten Programmierumgebungen ein. 
+
 Gib Quellenangaben an.
 
 ## Speichern
