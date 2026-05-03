@@ -1,0 +1,63 @@
+= Tech-News: Moderne Softwareentwicklung (Stand: 2. Mai 2026) =
+
+== KI & KI-native Entwicklungsumgebungen (IDE) ==
+'''Der Wandel zu autonomen Agenten-Plattformen'''
+Im Bereich der Entwicklungsumgebungen (IDEs) hat sich der Fokus signifikant von reinen Autocomplete-Tools hin zu autonomen KI-Agenten verlagert. Die IDE wird zunehmend zur zentralen Plattform zur Orchestrierung dieser Agenten.
+* '''JetBrains und VS Code Konvergenz:''' JetBrains verfolgt einen IDE-agnostischen Ansatz und bietet seinen AI Assistant nun auch als Erweiterung für Visual Studio Code an. Gleichzeitig erlauben JetBrains IDEs die Integration von Drittanbieter-Agenten über das neue Agent Client Protocol (ACP). Die klassischen Grenzen zwischen "leichtgewichtigem Editor" (VS Code) und "mächtiger IDE" (JetBrains) verschwimmen durch diese KI-Erweiterungen immer mehr. 
+* '''Terminal-Agenten & Orchestrierung:''' Terminal-Agenten wie Claude Code oder Gemini CLI integrieren zunehmend interaktive Features, während IDEs wie Cursor CLI-Fähigkeiten adaptieren ("Cloud Agents"). Neue Plattformen zur Agenten-Orchestrierung wie OpenAIs "Symphony" oder GitHubs "ACE" zielen auf die Koordination von Multi-Agenten-Systemen über Projektmanagement-Grenzen hinweg ab.
+* '''Markt-Herausforderungen:''' Die hohe Rechenlast für agentische Workflows führt bei Anbietern teilweise zu Kapazitätsengpässen, wie die zeitweise Pausierung von Neuanmeldungen bei GitHub Copilot zeigt.
+
+== Protokolle & Konzepte: ACP, MCP und Agentic RAG ==
+'''Standardisierung der KI-Kommunikation'''
+* '''Agent Client Protocol (ACP):''' Dieses neue Open-Source-Protokoll (vorangetrieben u. a. von JetBrains und Zed) entkoppelt KI-Agenten von den IDEs. Ähnlich wie das Language Server Protocol (LSP) verhindert ACP den Vendor-Lock-in und ermöglicht Entwicklern die freie Kombination von Agenten und Editoren.
+* '''Model Context Protocol (MCP):''' Das von Anthropic eingeführte MCP etabliert sich als "USB-C-Anschluss für KI". Es erlaubt Agenten, sicher und ohne proprietäre Integrationen auf externe Datenquellen wie Datenbanken, Jira oder GitHub zuzugreifen.
+* '''Von RAG zu Agentic RAG:''' Während das klassische Retrieval-Augmented Generation (RAG) bei komplexen Zusammenhängen an Grenzen stößt, setzen Entwickler nun vermehrt auf "Agentic RAG" und "GraphRAG". Hierbei ist die Datensuche nur ein Werkzeug innerhalb eines größeren, durch das LLM gesteuerten agentischen Workflows, der dynamisch Suchstrategien anpasst.
+
+== Programmiersprachen & Frameworks: ASP.NET Core MVC AI und Spring Boot AI ==
+'''Enterprise-Integration von KI-Funktionen'''
+* '''Spring Boot AI:''' Das Spring-Ökosystem treibt mit den aktuellen 1.x und 2.0.0 Milestone-Releases von "Spring AI" die Standardisierung voran. Der Fokus liegt auf portablen Abstraktionen (z. B. <code>ChatClient</code>), die den einfachen Wechsel zwischen KI-Providern erlauben, sowie auf der Integration des Model Context Protocol (MCP) in traditionelle Spring-Workflows.
+* '''ASP.NET Core MVC AI:''' In der .NET-Welt dominieren Modernisierungs-Szenarien und Tooling-Erweiterungen. Entwickler nutzen vermehrt die <code>Microsoft.Extensions.AI</code> Packages für standardisierte API-Zugriffe. Große UI-Bibliotheks-Anbieter statten ihre MVC-Komponenten zunehmend mit direkten KI-Features wie "AI Prompts", automatischen Filterungen oder Dokumentenzusammenfassungen aus.
+
+== Infrastruktur: KI-Server mieten & Cloud KI Services ==
+'''Der Trend zur hybriden Infrastruktur und "Cloud-Repatriierung"'''
+* '''Dedizierte KI-Server mieten:''' Aus Gründen der Datensicherheit (DSGVO), Compliance und Kosteneffizienz bei spezialisierten Workloads verlagern Unternehmen zunehmend Prozesse aus der Public Cloud auf dedizierte Server in lokalen Rechenzentren. Deutsche Anbieter punkten hier mit strikter Einhaltung europäischer Vorgaben und Pauschalpreisen für garantierte GPU-Ressourcen (z. B. NVIDIA A100/H100).
+* '''Cloud KI Services:''' Trotz des Trends zu On-Premise bleiben SaaS/PaaS Cloud-KI-Services für den Mittelstand essenziell, da sie eine sehr schnelle Implementierung und hohe Skalierbarkeit für Prozessautomatisierungen bieten.
+
+== KI-Plattformen, Tools & Modelle ==
+'''Aktuelle Entwicklungen der Marktführer'''
+* '''Google Antigravity:''' Die Plattform entwickelt sich zu einem Hub für agentengesteuerte Full-Stack-Entwicklung (inkl. Multiplayer-Features und Auth). Mit dem Wechsel auf ein Credit-basiertes Pricing-Modell und tieferen Google Workspace/Colab-Integrationen richtet sich Antigravity zunehmend an professionelle Enterprise-Workflows.
+* '''Ollama:''' Das Tool zum lokalen Ausführen von Modellen erhielt ein Performance-Update mit Apple MLX-Support und unterstützt das NVIDIA NVFP4 Format. Mit Befehlen wie <code>ollama launch</code> wird das Setup von Terminal-Agenten stark vereinfacht.
+* '''HuggingFace:''' Neben der Veröffentlichung neuer Modelle (z. B. IBM Granite 4.1) diskutiert die Community intensiv über die stetig steigenden Kosten für die Evaluierung von Multi-Agenten-Systemen, die mittlerweile an Pre-Training-Kosten heranreichen.
+* '''Foundry Toolkit (VS Code):''' Das Microsoft Foundry Toolkit (ehemals AI Toolkit) hat den General Availability (GA) Status erreicht. Eine Kernfunktion ist das neue "Toolboxes"-Feature in der Public Preview, mit dem Teams KI-Werkzeuge zentral kuratieren und über verschiedene Agenten-Frameworks hinweg wiederverwenden können.
+
+== No-Code / Low-Code KI-Plattformen ==
+'''Verschmelzung von Generativer KI und Workflow-Automatisierung'''
+* '''KI-Agenten als neue Bausteine:''' No-Code-Plattformen gehen 2026 weit über Drag-and-Drop hinaus. Nutzer können komplexe KI-Agenten (z. B. im Glean Agent Builder) per Prompting erstellen, die eigenständig in Unternehmenssystemen agieren.
+* '''Citizen Development skaliert:''' Schätzungen zufolge werden bis 2026 rund 75 % neuer Business-Apps über Low-/No-Code-Tools wie Bubble, Zapier oder Airtable mithilfe integrierter KI-Features entwickelt.
+
+== Agenten-Frameworks & Agents SDK ==
+'''Produktionsreife für komplexe Workflows'''
+* '''OpenAI Agents SDK:''' Ein großes Update Mitte April 2026 bringt native Sandboxing-Umgebungen und standardisierte Speichermanagement-Funktionen, um "Long-Horizon"-Tasks sicher und zuverlässig in Python und künftig TypeScript abzuwickeln.
+* '''Cursor Agent SDK:''' Cursor öffnet seine interne Infrastruktur für Entwickler. Das neue SDK ermöglicht es, maßgeschneiderte KI-Agenten für End-to-End-Coding-Workflows und automatisiertes Refactoring im eigenen Editor zu erstellen.
+
+== Infrastruktur & Modelle: ONNX und aktuelle LLM-Trends ==
+'''Standardisierung und Inferenz-Herausforderungen'''
+* '''ONNX 2026:''' Die Open Neural Network Exchange hat Version 1.21.0 mit Unterstützung für 2-Bit-Datentypen veröffentlicht. Im Mai 2026 gilt die ONNX Runtime als der De-facto-Standard (mit über 85 % Marktanteil bei Enterprise-Deployments), um Kosten bei der Modell-Inferenz zu senken.
+* '''Sprachmodelle heute:''' Neben dem Phänomen "Test-Time Compute" (Reasoning-Modelle verbrauchen bei der Inferenz massiv mehr Ressourcen) stehen aktuelle LLM-Anbieter wie OpenAI unter Kostendruck. Wissenschaftler des MIT konnten kürzlich mechanistisch erklären, wie "Superposition" zur Skalierungsfähigkeit von LLMs beiträgt, während das Oxford Internet Institute herausfand, dass auf "Wärme" trainierte Modelle eine signifikant höhere Fehlerquote beim Beantworten von Fakten aufweisen.
+
+== Quellenangaben ==
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1X831GeC6lW1wamGT9PGZSsKTCJtvu3Fn_4DpExbiKYlLsEt8SJGLxl8zJ3jM5nb1deevvmeSUtpIMaX7S7uvAcWPSyCl2QXmjMizflX8SlCX_Crk5-pY_0dwH_KTWuH-0EVd3_LcKz7EmeWNblz_ vibehackers.io]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9JWIzNDiGaVwIy6k1L4SiNAIiAL5hJv602a4jsEIfJCQ5K1hO27Rg0KNVB8xuAkqkcUROIrWerR65eR21z2dBATCK5nC91uw2skOEaMzaNwLF0mtI9B5Kiaj5oRnX2PI_4o63S8E6YkQivxsn0BBSl4VBvAIkUQCRUVcXMNKbbGYZKX9rAu_o_qhzKQyz21Ij2w== jetbrains.com]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGuhtvksxPdGN9lTdyoC8G1vc2L2ZLsLQq8XcT9AdTY6--TrBz4otbaCDyCIVclm8WRNW6QRBmUXt3l1bKK6h7CJ1sRCPjgXGLq4LxATmRihJH24nCqgdoWn5t8PVnonEpKOfOxYuP8ERjizB9MM_5Ur_K3zP-Pnp0w90crDd-RDjGJozilOYov7Epkh-b7 thenewstack.io (IDE Trends)]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEf9kHj1uiidugJ29xsPsSnARuPK41UFzSCgRK9avZsHOhVZGBazC8RIh13OzRpwThbMK5uDmyIJwcDIkEdivcCmqXvp0hllwYeL9Px52n8ZTTxwAFaRuKBDogOEesoWwY-P7tnyqizKPKv1MZ8uXa5wTTCqpu-bkXXj36BD1aPQd08yLMRj-G-qe2N7h2oTFeCGhi2HF623ZA0eJ9mAh8= reddit.com (Orchestrierung)]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq7o0Vf5Y2Rer8mHexsDr-P8IYWRI5LadAJ6DFFWQkiKs6jKl0NYev-LTDhJmPkLPGuYTabOnzyqYTIWMLcajFIuxSL_wiCwM_v3DdwgUh9wd4qWgs5T5imstQKEm9jB1wliHzXSKNgJq_J386npqCQfmqeaFG-vuia5kcJr3vIfqHzl9rWP9sRojuK4xvQhd_6y1c8c_3deB6WvuXP8mAWEVTB_rwdKaVrjRs8TTQ72TMb21JATKTx-_RzQ== medium.com (ACP/MCP)]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoKKJgeSRiauaYsINjB9ckmDmCbY50HVWHHc09kUffbjghmId5LrEgw5-1Ho2KYaQLIQDUXM9W6vgncfkS4Ask_EHhSL5yB6qKoYwfbC_K5zOGBtwntHqo8WGRwxTt8sy5uCciuxyPW-_iHPwcLEhroZlgRRvnz4H0Qr8BTcsz8z10contIX4xm79Vz7VtuM4B8zrN techradar.com]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFDJh2mfqnLFbqeYqbn3EHoEIU23LS38vZeKt01mmUUcez-zuolVj_yTmxXN6z76lA8YpxejnOgX3uUR0gvxrjgEvXY-7oOUk_nMVs1VWEyS1dtuaaqp2SDb0PLc9ZbxgA= infoq.com (Spring Boot AI)]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIOKhPjsQKptr0nU_ejbbX06QRbiUkxqGn6-aI2DOoS9NjWHVndeErmx5ub4OS-9QyouBQHvzkMo9KSHSXO1ffwzo6B6gkK_WBuxgaSgFC1rRQq8CuoPmeV4JuX_E3U5vhpG8BsCW9YR8k3j8F1rIXHQDCcwA30cPpyDUMNSPll497SPu9hr0AVyhLd_xSN0Cajrbk5PLmsUX069tX-6upjHV-itykUMJFDCZ00v1N0ZU-v39HDY2G visualstudiomagazine.com (ASP.NET)]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG35Lc4nsC0VNy8zdjlR35TDozybRZRbxJCeq2VoHQslhWbv_1rsvGD_lUmdUGFt8hu2sQNfsWoHM0YQyI8ihyHUr_6ONpi3NV6ml7cxFvXDse1GgPcpxpyvTgWjMJGu9wtzARDSnVyzXInLXJZvxDjO86XDsxHSh3sg-LmsdjH9YuIRGI3cIVgzD6E43RZApiva4Z3xPh3n2stmBsYlqkvBsBHIg== it-business.de (Cloud-Repatriierung)]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXCJurbgmAcPBgqhw5utRIpdXOPu7iWggtVSR9lfxk6CwkYScdnVmz-tw9Nx9osb1i0As-iaUFueMMJKITwk1bibEh6U5H5h_JlqWSd_EGCj2j-Sa5Vw== antigravity.google]
+* [https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSNEQwR6WFNu3CmHmRfSzHDcuYtMmtK4Xbxdt1s_uyOfsjKcc4L9RLA4G3LIIEBnHCFfTtH0gFNXQ3nP4wA39hV16GwXC2jlsq_oGn0U9c5vO-fc2AzF0WN2KOSjQIAroKzxcxc5jEl7bxKrJlQU7_QhrTyjDyIYTfoByJeCla2Bg-WSGwWOvkiJdvP00g0-NVY_iNIOsdos0FsxnVyfMkkJj9R72PUgBbD5FXHTjx2FBYqYEosaoXgjK2pqYrHuuz860= microsoft.com (Foundry Toolkit)]
+* [https://github.com github.com (ONNX 1.21 Release)]
+* [https://openai.com openai.com (Agents SDK Update)]
+* [https://stackademic.com stackademic.com (No-Code KI Trends)]
+* [https://llm-stats.com llm-stats.com (LLM Skalierung & Superposition)]
