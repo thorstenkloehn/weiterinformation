@@ -5,6 +5,7 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 - KI 
   - Entwicklungsumgebungen (IDE)
     - Jetbrains
+    - Android Studio
     - Visual Studio Code
     - Terminal-Agenten (Coding & System)
     - KI-native Entwicklungsumgebungen (IDE)
