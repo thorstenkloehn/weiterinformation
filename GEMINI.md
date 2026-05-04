@@ -30,7 +30,7 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 - Ai Sdks
 - HuggingFace
 - Foundry Toolkit for Visual Studio Code
-- Neuesten Entwicklungen rund um die Programmiersprachen ASP.NET Core MVC AI und Spring Boot AI. und kotlin Dies schließt relevante Frameworks, Tools, Best Practices und neue Funktionen dieser spezifischen AI-gestützten und Android Programmierumgebungen ein. 
+- Neuesten Entwicklungen rund um die Programmiersprachen ASP.NET Core MVC AI und Spring Boot AI. Dies schließt relevante Frameworks, Tools, Best Practices und neue Funktionen dieser spezifischen AI-gestützten und Android Programmierumgebungen ein. 
 
 Gib Quellenangaben an.
 
