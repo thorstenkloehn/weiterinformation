@@ -1,0 +1,41 @@
+= Technologie & KI-Nachrichten vom 4. Mai 2026 =
+
+== KI in der Softwareentwicklung ==
+
+=== Entwicklungsumgebungen (IDE) & Agenten ===
+Die Softwareentwicklung erlebt am 4. Mai 2026 weiterhin einen rasanten Wandel hin zu agentenbasierten Workflows. 
+
+* '''JetBrains & KI-Plugins:''' JetBrains bekräftigt in aktuellen Mitteilungen die Strategie für 2026, klassische und KI-agentenbasierte Workflows in ihren IDEs koexistieren zu lassen. Um Vendor-Lock-ins zu vermeiden, werden mehrere KI-Anbieter und Agententypen unterstützt. Die neue Version IntelliJ IDEA 2026.1 bietet native Wayland-Unterstützung und erweiterte Kotlin-aware JPA-Features. <ref>[https://www.jetbrains.com JetBrains Blog, 4. Mai 2026]</ref>
+* '''Visual Studio Code & Terminal-Agenten:''' Microsoft veröffentlichte Anfang Mai 2026 (Version 1.119) neue Agent-Host-Funktionen für VS Code, darunter einen Sandbox-Modus für ausgehenden Netzwerkverkehr und eine verbesserte Übersicht der Modellkosten. Zudem hat die IntelliSense-Funktion nun standardmäßig Priorität vor GitHub Copilot-Vervollständigungen, um visuelle Ablenkungen zu minimieren. <ref>[https://visualstudiomagazine.com Visual Studio Magazine, Mai 2026]</ref>
+* '''Agents SDK & Cloud-Agenten:''' Cursor hat am 4. Mai 2026 eine öffentliche Beta des '''Cursor SDK''' (TypeScript) veröffentlicht. Damit können Entwickler programmgesteuert auf die Laufzeitumgebung und Modelle von Cursor zugreifen und KI-Programmieragenten außerhalb des Editors, etwa in CI/CD-Pipelines, orchestrieren. <ref>[https://devops.com DevOps.com, 4. Mai 2026]</ref>
+* '''Agenten-Orchestrierung & Sicherheit:''' Das Startup Operant AI hat heute den "Operant Endpoint Protector" vorgestellt. Die Plattform ist speziell darauf ausgelegt, Bedrohungen abzuwehren, die durch den Einsatz von Coding-Agenten und automatisierten Workflows (wie MCP) an den Endpunkten entstehen. <ref>[https://www.globenewswire.com GlobeNewswire, 4. Mai 2026]</ref>
+
+=== Protokolle: ACP, MCP und RAG ===
+* '''Model Context Protocol (MCP):''' Heute wurden mehrere neue MCP-Integrationen für den Enterprise-Bereich veröffentlicht. Jama Software stellte den ersten MCP-Server für das Engineering-Management vor, um KI-Entwicklung mit Compliance-Standards zu verbinden. Blend Labs präsentierte zudem den "Autopilot MCP" für digitale Kreditplattformen. Gleichzeitig warnten Sicherheitsforscher von OX Security vor "By-Design"-Schwachstellen im MCP-Ökosystem (speziell beim `STDIO`-Transport), die eine Ausführung beliebiger Befehle ermöglichen können. Es wird dringend empfohlen, MCP-Dienste in Sandboxes auszuführen. <ref>[https://venturebeat.com VentureBeat; GlobeNewswire, 4. Mai 2026]</ref>
+* '''Agent Client Protocol (ACP):''' ACP etabliert sich zunehmend als Standard für die Kommunikation zwischen externen Agenten und IDEs. JetBrains baut die Unterstützung für "Bring your own agent"-Workflows über eine ACP-Registry weiter aus, und Microsoft integriert ACP in die GitHub Copilot CLI, um Copilot als programmierbaren Backend-Dienst nutzbar zu machen. <ref>[https://www.jetbrains.com JetBrains, 4. Mai 2026]</ref>
+* '''Retrieval-Augmented Generation (RAG):''' RAG ist Mitte 2026 der De-facto-Standard für wissensintensive Enterprise-Apps. Aktuelle Trends zeigen jedoch eine Abkehr von simplen Vektor-Datenbank-Pipelines hin zu "Knowledge Engines", die Daten in aufgabenspezifische Wissensartefakte umwandeln und bessere Kontrolle über Latenz und Ausgabequalität bieten. <ref>[https://venturebeat.com VentureBeat, Mai 2026]</ref>
+
+== Programmiersprachen & KI-Frameworks ==
+
+=== ASP.NET Core MVC AI ===
+Die .NET-Plattform positioniert sich im Mai 2026 als führende "Production-Ready"-Lösung für KI. Die Architektur moderner intelligenter Anwendungen umfasst routinemäßig ASP.NET Core Web APIs für die Service-Ebene, Worker Services für die KI-Datenverarbeitung im Hintergrund und integrierte Vektorspeicher für semantische Suchen. Alles wird unter den Standard-Authentifizierungs- und Compliance-Frameworks von .NET (und starker Azure-Integration) abgesichert. KI wird zudem verstärkt für Refactoring und automatisiertes Testen innerhalb des .NET-Ökosystems eingesetzt. <ref>[https://medium.com Medium - .NET Trends, Mai 2026]</ref>
+
+=== Spring Boot AI ===
+Bei Spring Boot liegt der Fokus heute auf der Enterprise-Integration von generativer KI durch das '''Spring AI''' Framework. Entwickler nutzen Spring AI, um LLMs und RAG-Systeme mit denselben Mustern wie traditionelle Geschäftslogik (Dependency Injection, Spring Security) einzubinden. Die Produktionssicherheit wird durch den massiven Einsatz des Spring Boot Actuators zur Überwachung von Token-Verbrauch und Latenzen gewährleistet. <ref>[https://arthurraposo.com Arthur Raposo Blog, Mai 2026]</ref>
+
+== Modelle, Plattformen & SDKs ==
+
+* '''Ollama:''' Das lokale LLM-Tool verzeichnet ein massives Wachstum und unterstützt nach neuen Updates Anfang Mai nun über 200 Modelle. Zu den neuesten Hinzufügungen zählen GLM-5.1, Kimi K2.5, Nemotron Ultra, Granite 3.3 und SmolLM2. <ref>[https://canitrun.net CanItRun, Mai 2026]</ref>
+* '''Google Antigravity:''' Im Vorfeld der Google I/O 2026 nutzen interne Teams das von Google entwickelte KI-Tool "Antigravity" für Dateisystemoperationen, um interaktive Showcase-Projekte zu erstellen. Eine kürzlich von Pillar Security entdeckte Sicherheitslücke, die Remote-Code-Ausführung ermöglichte, wurde erfolgreich gepatcht. <ref>[https://www.cyberscoop.com CyberScoop; Google Blog, Mai 2026]</ref>
+* '''HuggingFace:''' Das Unternehmen hat mit '''ml-intern''' einen neuen Open-Source-KI-Agenten veröffentlicht, der das smolagents-Framework nutzt, um Post-Training-Workflows für LLMs zu automatisieren. <ref>[https://www.marktechpost.com MarkTechPost, Mai 2026]</ref>
+* '''Foundry Toolkit for Visual Studio Code:''' Das früher als "AI Toolkit for VS Code" bekannte Tool firmiert nun als '''Microsoft Foundry Toolkit''' und ist seit kurzem allgemein verfügbar (GA). Neu vorgestellt wurde die "Toolbox" in der Public Preview, die es Teams ermöglicht, Werkzeuge zwischen verschiedenen KI-Agenten-Frameworks zu konfigurieren und wiederzuverwenden (inklusive MCP-Kompatibilität). <ref>[https://www.microsoft.com Microsoft, Mai 2026]</ref>
+* '''Sprachmodelle & LLM-Anbieter:''' NVIDIA hat das multimodale Nemotron 3 Nano Omni Modell für lange Kontexte veröffentlicht (verfügbar u.a. auf Hugging Face). Gleichzeitig lockern Microsoft und OpenAI ihre Partnerschaft, wodurch OpenAI seine Dienste künftig flexibler auch abseits von Azure anbieten kann. <ref>[https://huggingface.co Hugging Face; The Journal, Mai 2026]</ref>
+
+== Infrastruktur: Server, Cloud & KI-Services ==
+
+* '''Dedizierter Server & KVM-Server mieten:''' Spezialisierte Anbieter wie '''Hetzner''' etablieren sich weiterhin als bevorzugte Wahl für Startups und Entwickler, die pure Rechenleistung (KVM-basierte Cloud- und dedizierte Server) zu berechenbaren Preisen suchen. Sie bilden einen Gegenpol zu den komplexen und oft teureren KI-Ökosystemen der Hyperscaler. <ref>[https://ssdnodes.com SSDNodes, Mai 2026]</ref>
+* '''AI Server mieten & Cloud KI Services:''' Die großen Cloud-Anbieter (AWS, Google Cloud, Azure) forcieren die vertikale KI-Integration. Google Cloud profitiert massiv von seinen TPU-Investitionen. Unternehmen lagern ihre KI-Workloads zunehmend in die Cloud aus, wobei der Backlog für Rechenzentrumskapazitäten der Hyperscaler auf über 2 Billionen US-Dollar geschätzt wird. <ref>[https://constellationr.com Constellation Research, Mai 2026]</ref>
+
+== Themenübergreifende Nachrichten ==
+* '''Star Wars Day (May the 4th):''' Cisco feiert den 4. Mai mit einem "Galaxy Mode" für seinen KI-Assistenten, der IT-Teams mit neuen Deep-Reasoning-Funktionen bei Sicherheitsaudits unterstützt – visuell und akustisch untermalt im Star-Wars-Stil. <ref>[https://www.networkworld.com Network World, 4. Mai 2026]</ref>
+* '''Datenschutz:''' Mehrere staatliche US-Krankenversicherungsportale haben unbeabsichtigt Nutzerdaten über Ad-Tracker an Meta, Google und TikTok weitergegeben, was erneute Diskussionen über den Datenschutz im digitalen Zeitalter auslöst. <ref>[https://techbrew.com Tech Brew, 4. Mai 2026]</ref>
