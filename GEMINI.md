@@ -4,6 +4,7 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 
 - KI 
   - Entwicklungsumgebungen (IDE)
+    - Kotlin Multiplatform
     - Jetbrains
     - Android Studio
     - Visual Studio Code
