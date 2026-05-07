@@ -19,7 +19,7 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
   - Model Context Protocol (MCP)
   - Retrieval-Augmented Generation (RAG)
   - Webbasierte & No-Code/Low-Code Plattformen
-- Programmiersprachen: Nur ASP.NET Core MVC  AI und Spring Boot Ai
+- Programmiersprachen: Nur ASP.NET Core MVC  AI und Spring Boot Ai und Kotlin Multiplatform
 -  KVM-Servern anmieten
 - Dedizierter Server mieten
 - Ai Server mieten
