@@ -37,4 +37,4 @@ Gib Quellenangaben an.
 
 ## Speichern
 
-Das Ergebnis soll im Nachrichtenstil verfasst und in MediaWiki-Syntax ausgegeben werden. Speichere das Ergebnis in der Datei `nachrichten1.wiki`.
+Das Ergebnis soll im Nachrichtenstil verfasst und in MediaWiki-Syntax ausgegeben werden. Speichere das Ergebnis in der Datei `nachrichten2.wiki`.
