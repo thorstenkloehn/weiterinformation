@@ -37,6 +37,11 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 - Java Programmierung
 - Kotlin Programmierung
 - Kotlin Multiplatform Programmierung
+- Spring Boot Programmierung
+- Entwicklung von KI-basierten Softwareapplikationen mit spezialisierten Frameworks wie LangChain, LlamaIndex oder Semantic Kernel.
+- Integration von Large Language Models (LLMs) in bestehende Geschäftsanwendungen unter Einsatz von Cloud-Services wie Azure OpenAI, Amazon Bedrock oder Google Vertex AI.
+- Implementierung von agentenbasierten Systemen, die selbstständig komplexe Aufgaben über verschiedene Tools und APIs hinweg koordinieren können.
+- Einsatz von KI zur Automatisierung von Software-Entwicklungsprozessen, inklusive Code-Generierung, Testing und Debugging.
 
 Gib Quellenangaben an.
 
