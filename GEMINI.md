@@ -32,6 +32,11 @@ Weitere Themen: Suche im Web nach themenübergreifenden Nachrichten von heute. W
 - HuggingFace
 - Foundry Toolkit for Visual Studio Code
 - Neuesten Entwicklungen rund um die Programmiersprachen ASP.NET Core MVC AI und Spring Boot AI und Kotlin Multiplatform. Dies schließt relevante Frameworks, Tools, Best Practices und neue Funktionen dieser spezifischen AI-gestützten und Android Programmierumgebungen ein. 
+- Asp net Core Programmierung
+- C# Programmierung
+- Java Programmierung
+- Kotlin Programmierung
+- Kotlin Multiplatform Programmierung
 
 Gib Quellenangaben an.
 
